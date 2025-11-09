@@ -1,10 +1,16 @@
 <!-- FILE: script.js -->
 // Small behavior: mobile nav toggle, smooth scrolling, contact form validation
+  /* FILE: script.js */
 document.addEventListener('DOMContentLoaded', function(){
-var navToggle = document.getElementById('navToggle');
-var navList = document.getElementById('navList');
-navToggle.addEventListener('click', function(){ navList.classList.toggle('show'); });
+const navToggle = document.getElementById('navToggle');
+const navList = document.getElementById('navList');
+navToggle.addEventListener('click', ()=> navList.classList.toggle('show'));
 
+
+// Simple form submit
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', e => { e.preventDefault(); alert('Message sent!'); form.reset(); });
+});
 
 // Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
