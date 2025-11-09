@@ -2,124 +2,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Håkon — Web Designer & Dev</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Håkon Gabrielsen — web designer and aspiring programmer. Portfolio, skills and contact.">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Håkon — Expressive Web</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <div class="brand">Håkon<span class="dot">.</span></div>
-      <button class="nav-toggle" aria-label="Open menu" id="navToggle">☰</button>
-      <ul class="nav-list" id="navList">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+<nav class="nav container">
+<div class="brand">Håkon<span class="dot">.</span></div>
+<button class="nav-toggle" aria-label="Open menu" id="navToggle">☰</button>
+<ul class="nav-list" id="navList">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-  <main>
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1 id="hero-title">I'm <strong>Håkon</strong></h1>
-          <p class="lead">A web designer learning programming — building experiences with empathy and craft.</p>
-          <p class="cta-row">
-            <a class="btn primary" href="#contact">Contact me</a>
-            <a class="btn ghost" href="#skills">My skills</a>
-          </p>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 600 400" class="illustration" role="img" aria-hidden="true">
-            <defs>
-              <linearGradient id="g" x1="0" x2="1">
-                <stop offset="0" stop-color="#7dd3fc" />
-                <stop offset="1" stop-color="#60a5fa" />
-              </linearGradient>
-            </defs>
-            <rect width="600" height="400" rx="24" fill="url(#g)" />
-            <circle cx="500" cy="80" r="36" fill="#fff" opacity="0.35"/>
-            <g transform="translate(40,220)">
-              <path d="M0 80 Q120 -40 240 80 T480 80 L480 140 L0 140 Z" fill="#0ea5a6" opacity="0.85"/>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </section>
 
-    <section class="about container" id="about">
-      <h2>Hello friend.</h2>
-      <p class="muted">You've just arrived at my portray website — please enjoy your stay here. I build small, thoughtful websites and I am learning to code. Below are a few of the skills and projects I'm exploring.</p>
-    </section>
+<main>
+<section class="hero" id="home">
+<div class="hero-bg" style="background-image: url('https://picsum.photos/id/1015/1600/900');"></div>
+<div class="hero-text">
+<h1>Håkon <span class="marker">Gabrielsen</span></h1>
+<p class="lead">I create expressive, personal experiences in the web space — blending visuals and words.</p>
+<a class="btn primary" href="#contact">Reach out</a>
+</div>
+</section>
 
-    <section class="skills" id="skills">
-      <div class="container">
-        <h2>My Skills</h2>
-        <div class="grid">
-          <article class="card">
-            <svg class="card-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zM4 12h16v2H4zM4 18h16v2H4z"/></svg>
-            <h3>Front-end</h3>
-            <p>HTML, CSS, and JavaScript — responsive layouts and accessible interfaces.</p>
-          </article>
 
-          <article class="card">
-            <svg class="card-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-            <h3>Design</h3>
-            <p>Visual hierarchy, typography, and simple, usable interfaces inspired by real people.</p>
-          </article>
+<section class="about" id="about">
+<div class="container layered">
+<img src="https://picsum.photos/id/1025/600/400" alt="Abstract art" class="about-img">
+<div class="about-text">
+<h2>About Me</h2>
+<p>I am Håkon, an expressive web designer who blends bold visuals with thoughtful experiences. I believe every site tells a story, and mine is one of curiosity, creativity, and confidence.</p>
+</div>
+</div>
+</section>
 
-          <article class="card">
-            <svg class="card-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
-            <h3>Learning</h3>
-            <p>Studying programming and building projects — always curious and iterating fast.</p>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="contact" id="contact">
-      <div class="container contact-inner">
-        <div class="contact-copy">
-          <h2>Get in touch</h2>
-          <p class="muted">If you'd like to collaborate, chat about a project, or say hi — send a quick message below.</p>
-          <p class="small">©2022 Håkon Gabrielsen</p>
-          <p class="socials">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
-            <a href="https://kezraflyhigh.github.io" target="_blank" rel="noopener">Website</a>
-          </p>
-        </div>
+<section class="skills" id="skills">
+<div class="container">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card">Front-end<br>HTML, CSS, JS</div>
+<div class="card">Design<br>Typography & Visuals</div>
+<div class="card">Projects<br>Expressive Builds</div>
+</div>
+</div>
+</section>
 
-        <form class="contact-form" id="contactForm" novalidate>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required placeholder="Your name">
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required placeholder="you@example.com">
+<section class="contact" id="contact">
+<div class="container contact-inner">
+<h2>Contact Me</h2>
+<p class="muted">Want to collaborate or just say hi? Reach out below.</p>
+<form id="contactForm">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message" required></textarea>
+<button type="submit" class="btn primary">Send</button>
+</form>
+</div>
+</section>
+</main>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required placeholder="A short message..."></textarea>
 
-          <div class="form-row">
-            <button class="btn primary" type="submit">Send message</button>
-            <button class="btn ghost" type="reset">Reset</button>
-          </div>
-          <p class="form-msg" id="formMsg" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
+<footer class="site-footer">
+<div class="container">©2025 Håkon Gabrielsen</div>
+</footer>
 
-  </main>
 
-  <footer class="site-footer">
-    <div class="container foot-inner">Made with care — Håkon Gabrielsen</div>
-  </footer>
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
