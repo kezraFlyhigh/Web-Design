@@ -1,65 +1,75 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Håkon Gabrielsen</title>
-  <link rel="stylesheet" href="https://github.com/kezraFlyhigh/Web-Design/tree/main/CSS/styles.css">
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Håkon — Web Designer & Dev</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Håkon Gabrielsen — web designer and aspiring programmer. Portfolio, skills and contact.">
 </head>
-
 <body>
-  <div class="top-container">
-    <img class=top-cloud src="https://github.com/kezraFlyhigh/Web-Design/blob/main/Images/cloud.png?raw=true" alt="cloud-img">
-    <h1>I'm Håkon</h1>
-    <h2 class= indiv>A web designer</em></b><br>
-    <b><em>studying</em></b> to become a <br>
-    <strong><span class=pro>programmer</span></h2>
-    <img class= sun src="https://github.com/kezraFlyhigh/Web-Design/tree/main/Images/sun.png?raw=true" alt="sun">
-    <img class= bottom-cloud src="https://github.com/kezraFlyhigh/Web-Design/tree/main/Images/cloud.png?raw=true" alt="cloud-img">
-    <img class= mountain2 src="https://github.com/kezraFlyhigh/Web-Design/tree/main/Images/mountain2.png?raw=true" alt="mountain-img">
-
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="" alt="">
-      <h2>Hello friend.</h2>
-      <p class=white>You've just arrived at my portray website, please enjoy your stay here.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2 class=white>My Skills.</h2>
-      <div class="skill-row">
-        <img class="programmer" src="https://github.com/kezraFlyhigh/Web-Design/tree/main/Images/programmer.png?raw=true" alt="program img">
-        <h3>Lorem & Ipsum</h3>
-        <p class=white>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-      </div>
-      <div class="skill-row">
-        <img class="paragliding" src="https://github.com/kezraFlyhigh/Web-Design/tree/main/Images/paragliding.png?raw=true" alt="paragliding">
-        <h3>Lorem Ipsum Dolor</h3>
-        <p class=white>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-      </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p class=white>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="">CONTACT ME</a>
-    </div>
-  </div>
+<header class="site-header">
+<nav class="nav container">
+<div class="brand">Håkon<span class="dot">.</span></div>
+<button class="nav-toggle" aria-label="Open menu" id="navToggle">☰</button>
+<ul class="nav-list" id="navList">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p>©2022 Håkon Gabrielsen </p>
-  </div>
+<main>
+<section class="hero" id="home" aria-labelledby="hero-title">
+<div class="container hero-inner">
+<div class="hero-copy">
+<h1 id="hero-title">I'm <strong>Håkon</strong></h1>
+<p class="lead">A web designer learning programming — building experiences with empathy and craft.</p>
+<p class="cta-row">
+<a class="btn primary" href="#contact">Contact me</a>
+<a class="btn ghost" href="#skills">My skills</a>
+</p>
+</div>
+<div class="hero-art" aria-hidden="true">
+<!-- Minimal decorative illustration built with CSS / SVG -->
+<svg viewBox="0 0 600 400" class="illustration" role="img" aria-hidden="true">
+<defs>
+<linearGradient id="g" x1="0" x2="1">
+<stop offset="0" stop-color="#7dd3fc" />
+<stop offset="1" stop-color="#60a5fa" />
+</linearGradient>
+</defs>
+<rect width="600" height="400" rx="24" fill="url(#g)" />
+<circle cx="500" cy="80" r="36" fill="#fff" opacity="0.35"/>
+<g transform="translate(40,220)">
+<path d="M0 80 Q120 -40 240 80 T480 80 L480 140 L0 140 Z" fill="#0ea5a6" opacity="0.85"/>
+</g>
+</svg>
+</div>
+</div>
+</section>
 
-</body>
+
+<section class="about container" id="about">
+<h2>Hello friend.</h2>
+<p class="muted">You've just arrived at my portray website — please enjoy your stay here. I build small, thoughtful websites and I am learning to code. Below are a few of the skills and projects I'm exploring.</p>
+</section>
+
+
+<section class="skills" id="skills">
+<div class="container">
+<h2>My Skills</h2>
+<div class="grid">
+<article class="card">
+<svg class="card-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zM4 12h16v2H4zM4 18h16v2H4z"/></svg>
+<h3>Front-end</h3>
+<p>HTML, CSS, and JavaScript — responsive layouts and accessible interfaces.</p>
+</article>
+
 
 </html>
